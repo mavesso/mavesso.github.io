@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MAVESSO – Webdesign, WordPress und Webentwicklung. Moderne Webseiten und digitale Lösungen.">
+  <title>MAVESSO | Webdesign & Development</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0c12;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8%;
+      border-bottom: 1px solid #292431;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #a855f7;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 24px;
+    }
+
+    nav a:hover {
+      color: #a855f7;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 8%;
+    }
+
+    .eyebrow {
+      color: #b88af5;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 80px);
+      line-height: 1.1;
+      max-width: 900px;
+      margin: 22px 0;
+    }
+
+    .hero p {
+      color: #d0ccd8;
+      max-width: 650px;
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      width: fit-content;
+      padding: 14px 26px;
+      margin-top: 26px;
+      background: #813ce6;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #9d5cf4;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-top: 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      padding: 30px;
+      border: 1px solid #34303d;
+      border-radius: 12px;
+      background: #191621;
+    }
+
+    .card h3 {
+      color: #c69aff;
+    }
+
+    .card p {
+      color: #d0ccd8;
+    }
+
+    .card a {
+      color: #c69aff;
+    }
+
+    .muted {
+      color: #d0ccd8;
+      max-width: 760px;
+    }
+
+    footer {
+      padding: 32px 8%;
+      border-top: 1px solid #292431;
+      color: #b8b3c1;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      header {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .hero {
+        min-height: 65vh;
+        padding-top: 60px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">MAVESSO<span>.</span></div>
+
+    <nav aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#ueber-uns">Über MAVESSO</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">WordPress · Webdesign · Development</div>
+
+      <h1>Digitale Ideen.<br>Starke Webseiten.</h1>
+
+      <p>
+        MAVESSO steht für modernes Webdesign,
+        benutzerfreundliche Webseiten und individuelle
+        digitale Lösungen mit einem klaren Anspruch an
+        Gestaltung und Funktion.
+      </p>
+
+      <a class="button" href="#projekte">Projekte entdecken</a>
+    </div>
+
+    <section id="leistungen">
+      <h2 class="section-title">Unsere Leistungen</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Webdesign</h3>
+          <p>Moderne, responsive Webseiten mit einem klaren Design.</p>
+        </div>
+
+        <div class="card">
+          <h3>WordPress</h3>
+          <p>Individuelle Webseiten mit WordPress und Elementor.</p>
+        </div>
+
+        <div class="card">
+          <h3>Webentwicklung</h3>
+          <p>Webseiten mit HTML, CSS und JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekte">
+      <h2 class="section-title">Ausgewählte Projekte</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Hotel Aurelia</h3>
+          <p>Moderne Hotel-Webseite mit Zimmern und Wellness-Bereich.</p>
+          <a href="https://mavesso.github.io/hotel-aurelia/">
+            Live-Webseite ansehen
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>AUREA Immobilien</h3>
+          <p>Elegante Immobilien-Webseite mit responsivem Design.</p>
+          <a href="https://mavesso.github.io/aurea-immobilien/">
+            Live-Webseite ansehen
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>NORDLY Living</h3>
+          <p>WordPress- und WooCommerce-Demoprojekt.</p>
+          <a href="https://github.com/mavesso/nordly-living">
+            Projekt ansehen
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ueber-uns">
+      <h2 class="section-title">Über MAVESSO</h2>
+
+      <p class="muted">
+        MAVESSO verbindet modernes Design mit technischer Umsetzung.
+        Im Mittelpunkt stehen individuelle Webseiten, eine klare
+        Benutzerführung und ein professioneller digitaler Auftritt.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 MAVESSO · Webdesign & Development
+  </footer>
+</body>
+</html>
